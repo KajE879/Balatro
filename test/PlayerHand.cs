@@ -10,6 +10,9 @@ namespace test
         //int MaxCards;
         List<int> SelectedIndexes;
 
+        public IEnumerable<Card> CardsInHand => this.Hand;
+        public IEnumerable<int> SelectedCards => this.SelectedCards;
+
         public PlayerHand(int maxCards)
         {
             this.MaxCards = maxCards;

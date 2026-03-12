@@ -7,7 +7,15 @@ namespace test {
     {
         static void Main(string[] args)
         {
-            Deck testdeck = new Deck();
+            Deck testDeck = new Deck();
+            // cards
+            PlayerHand hand = new PlayerHand(5);
+            // give card
+            Model model = new Model(testDeck, hand);
+
+            ViewModel viewModel = new ViewModel(model);
+            viewModel.UpdateFromModel();
+            viewModel.RenderUI();
         }
     }
 }
