@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace test {
-    class program
+namespace test
+{
+    class Program
     {
         static void Main(string[] args)
         {
             Deck testDeck = new Deck();
-            // cards
             PlayerHand hand = new PlayerHand(5);
-            // give card
+            hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
+
             Model model = new Model(testDeck, hand);
 
             ViewModel viewModel = new ViewModel(model);
             viewModel.UpdateFromModel();
-            viewModel.RenderUI();
+
+            viewModel.Run();
         }
     }
 }

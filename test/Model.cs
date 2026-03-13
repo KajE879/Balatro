@@ -4,7 +4,7 @@ using System.Text;
 
 namespace test
 {
-    internal class Model
+    class Model
     {
         public Deck Deck;
         public PlayerHand PlayerHand;

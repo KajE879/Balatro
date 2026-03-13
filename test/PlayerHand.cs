@@ -4,14 +4,14 @@ using System.Text;
 
 namespace test
 {
-    internal class PlayerHand
+    class PlayerHand
     {
         List<Card> Hand;
         //int MaxCards;
         List<int> SelectedIndexes;
 
         public IEnumerable<Card> CardsInHand => this.Hand;
-        public IEnumerable<int> SelectedCards => this.SelectedCards;
+        public IEnumerable<int> SelectedCards => this.SelectedIndexes;
 
         public PlayerHand(int maxCards)
         {
@@ -29,7 +29,10 @@ namespace test
 
         public void SelectCard(int index)
         {
-            if(this.Hand.Count == 5)
+            if (this.Hand.Count == 5)
+            {
+                return;
+            }
             if (this.Hand.Count > index)
             {
                 if (!this.SelectedIndexes.Contains(index))
@@ -47,7 +50,7 @@ namespace test
         public List<Card> GetSelected()
         {
             return this.Hand.
-               Where((Card, index) =>
+                Where((card, index) =>
                 {
                     if (this.SelectedIndexes.Contains(index))
                     {
@@ -60,16 +63,18 @@ namespace test
 
         public void RemoveSelected()
         {
+            //Set hand to only non-selected cards
             this.Hand = this.Hand.
-               Where((Card, index) =>
-               {
-                   if (this.SelectedIndexes.Contains(index))
-                   {
-                       return false;
-                   }
-                   return true;
-               })
+                Where((card, index) =>
+                {
+                    if (this.SelectedIndexes.Contains(index))
+                    {
+                        return false;
+                    }
+                    return true;
+                })
             .ToList();
+
             this.SelectedIndexes.Clear();
         }
     }

@@ -4,19 +4,19 @@ using System.Text;
 
 namespace test
 {
-    internal class ViewModel
+    class ViewModel
     {
         private Model Model;
         private int DeckCardsTotal, DeckCardsRemaining = 0;
         private IEnumerable<Card> CardsInHand = new List<Card>();
         private IEnumerable<int> SelectedCards = new List<int>();
-        public ViewModel(Model model) 
+        public ViewModel(Model model)
         {
             this.Model = model;
         }
 
         public void UpdateFromModel()
-        { 
+        {
             this.DeckCardsTotal = this.Model.Deck.TotalCardCount;
             this.DeckCardsRemaining = this.Model.Deck.CardsRemainingCount;
             this.CardsInHand = this.Model.PlayerHand.CardsInHand;
@@ -33,11 +33,11 @@ namespace test
                 + this.DeckCardsTotal.ToString());
 
             for (int i = 0; i < this.CardsInHand.Count(); i++)
-            { 
+            {
                 Card card = this.CardsInHand.ElementAt(i);
                 if (this.SelectedCards.Contains(i))
                 {
-                    Console.Write("[X]");
+                    Console.Write("[x]");
                 }
                 else
                 {
@@ -48,7 +48,7 @@ namespace test
         }
 
         public void HandleUserInput()
-        { 
+        {
             ConsoleKeyInfo key = Console.ReadKey();
 
             if (key.Key == ConsoleKey.Enter)
@@ -66,6 +66,8 @@ namespace test
             }
         }
 
+
+        //actions
         public void SelectCard(int index)
         {
             this.Model.PlayerHand.SelectCard(index);
