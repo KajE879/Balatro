@@ -66,7 +66,6 @@ namespace test
             }
         }
 
-
         //actions
         public void SelectCard(int index)
         {

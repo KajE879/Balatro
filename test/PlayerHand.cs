@@ -63,7 +63,6 @@ namespace test
 
         public void RemoveSelected()
         {
-            //Set hand to only non-selected cards
             this.Hand = this.Hand.
                 Where((card, index) =>
                 {

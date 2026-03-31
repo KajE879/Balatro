@@ -8,7 +8,6 @@ namespace test
     {
         private List<Card> CardsRemaining;
         private List<Card> CardsTaken;
-        //new
         public int TotalCardCount
         {
             get
@@ -18,7 +17,6 @@ namespace test
         }
 
         public int CardsRemainingCount => this.CardsRemaining.Count;
-        //oud
         public Deck()
         {
             this.CardsRemaining = new List<Card>();
