@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using test.Card;
 
-namespace test
+namespace test.Player
 {
     class Deck
     {

@@ -4,11 +4,7 @@ using System.Text;
 
 namespace test
 {
-    enum Suit
+    internal class BasicHandEvaluator
     {
-        Hearts,
-        Diamonds,
-        Spades,
-        Clovers
     }
 }

@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace test
+namespace test.Combination
 {
-    internal class ScoreCalculator
+    internal class Three
     {
-       
     }
 }

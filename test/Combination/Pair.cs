@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace test
+namespace test.Combination
 {
-    internal class WildCard
+    internal class Pair
     {
     }
 }

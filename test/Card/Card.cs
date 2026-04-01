@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using test.Interface;
 
-namespace test
+namespace test.Card
 {
     class Card : ICard
     {
