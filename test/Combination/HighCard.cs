@@ -6,8 +6,12 @@ using test.Cards;
 
 namespace test.Combination
 {
-    internal class High : IHandType
+    class HighCard : IHandType
     {
-        
+        public int Mult => 1;
+        public bool Matches(List<Card> cards)
+        {
+            return true;
+        }
     }
 }

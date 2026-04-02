@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using test.Cards;
+using System.Linq;
 
 namespace test.Player
 {
@@ -39,12 +40,10 @@ namespace test.Player
         {
             this.CardsRemaining.Add(card);
         }
-        public Card? TakeCard()
+        public Card TakeCard()
         {
             if (this.CardsRemaining.Count == 0)
-            {
                 return null;
-            }
 
             Card taken = this.CardsRemaining.First();
             this.CardsRemaining.RemoveAt(0);
@@ -63,7 +62,10 @@ namespace test.Player
 
         public void Shuffle()
         {
-            this.CardsRemaining = this.CardsRemaining.Shuffle().ToList();
+            Random rng = new Random();
+            this.CardsRemaining = this.CardsRemaining
+                .OrderBy(x => rng.Next())
+                .ToList();
         }
     }
 }

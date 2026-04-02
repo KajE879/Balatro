@@ -81,6 +81,7 @@ namespace test
         {
             while (true)
             {
+                UpdateFromModel();
                 RenderUI();
                 HandleUserInput();
             }
@@ -94,7 +95,8 @@ namespace test
             }
             else
             {
-                this.Model.PlayerHand.SelectCard(index);
+                if (this.SelectedCards.Count() < 5)
+                    this.Model.PlayerHand.SelectCard(index);
             }
 
             UpdateFromModel();

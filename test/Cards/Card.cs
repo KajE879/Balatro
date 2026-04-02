@@ -8,8 +8,8 @@ namespace test.Cards
 {
     class Card : ICard
     {
-        public CardValue Value;
-        public Suit Suit;
+        public CardValue Value { get; set; }
+        public Suit Suit { get; set; }
         public Card(CardValue startValue, Suit startSuit)
         {
             this.Value = startValue;

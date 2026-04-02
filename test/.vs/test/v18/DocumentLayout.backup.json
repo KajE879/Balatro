@@ -3,24 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\kajva\\source\\repos\\test\\test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\player\\playerhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:player\\playerhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\handevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:handevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\player\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:player\\deck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\royalflush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\royalflush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\pair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\pair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\handutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\handutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\fiveofakind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\fiveofakind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\player\\handscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:player\\handscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\cards\\cardvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:cards\\cardvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\interface\\ihandtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:interface\\ihandtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\threeofakind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\threeofakind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\twopair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\twopair.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\straightflush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\straightflush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\straight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\straight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\highcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\highcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\fullhouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\fullhouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\fourofakind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\fourofakind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\flushhouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\flushhouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\flushfive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\flushfive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\combination\\flush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:combination\\flush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|c:\\users\\kajva\\source\\repos\\test\\test\\player\\playerhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|test.csproj|solutionrelative:player\\playerhand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,63 +106,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA8AAAAuAAAAAAAAAA==",
+              "Title": "HandEvaluator.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\HandEvaluator.cs",
+              "RelativeDocumentMoniker": "HandEvaluator.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\HandEvaluator.cs",
+              "RelativeToolTip": "HandEvaluator.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T07:33:58.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Deck.cs",
-              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\Deck.cs",
-              "RelativeDocumentMoniker": "Player\\Deck.cs",
-              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\Deck.cs",
-              "RelativeToolTip": "Player\\Deck.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T07:21:38.637Z",
+              "WhenOpened": "2026-04-02T08:24:24.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlayerHand.cs",
-              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\PlayerHand.cs",
-              "RelativeDocumentMoniker": "Player\\PlayerHand.cs",
-              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\PlayerHand.cs",
-              "RelativeToolTip": "Player\\PlayerHand.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T07:21:32.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ViewModel.cs",
               "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\ViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel.cs",
-              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\ViewModel.cs",
-              "RelativeToolTip": "ViewModel.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwDEAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\ViewModel.cs*",
+              "RelativeToolTip": "ViewModel.cs*",
+              "ViewState": "AgIAAFUAAAAA+WabG1MbwGMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T07:19:47.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Model.cs",
               "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Model.cs",
               "RelativeDocumentMoniker": "Model.cs",
@@ -96,6 +146,278 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T07:19:44.68Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Deck.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\Deck.cs",
+              "RelativeDocumentMoniker": "Player\\Deck.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\Deck.cs*",
+              "RelativeToolTip": "Player\\Deck.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T07:21:38.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T07:33:58.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FiveOfAKind.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FiveOfAKind.cs",
+              "RelativeDocumentMoniker": "Combination\\FiveOfAKind.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FiveOfAKind.cs",
+              "RelativeToolTip": "Combination\\FiveOfAKind.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAWwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:08:02.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HandUtils.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\HandUtils.cs",
+              "RelativeDocumentMoniker": "Combination\\HandUtils.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\HandUtils.cs",
+              "RelativeToolTip": "Combination\\HandUtils.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBgAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:26:19.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoyalFlush.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\RoyalFlush.cs",
+              "RelativeDocumentMoniker": "Combination\\RoyalFlush.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\RoyalFlush.cs",
+              "RelativeToolTip": "Combination\\RoyalFlush.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:19:21.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HandScore.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\HandScore.cs",
+              "RelativeDocumentMoniker": "Player\\HandScore.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\HandScore.cs",
+              "RelativeToolTip": "Player\\HandScore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:35:03.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CardValue.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Cards\\CardValue.cs",
+              "RelativeDocumentMoniker": "Cards\\CardValue.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Cards\\CardValue.cs",
+              "RelativeToolTip": "Cards\\CardValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:28:26.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pair.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\Pair.cs",
+              "RelativeDocumentMoniker": "Combination\\Pair.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\Pair.cs",
+              "RelativeToolTip": "Combination\\Pair.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:16:16.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Cards\\Card.cs",
+              "RelativeDocumentMoniker": "Cards\\Card.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Cards\\Card.cs",
+              "RelativeToolTip": "Cards\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:28:28.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IHandType.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Interface\\IHandType.cs",
+              "RelativeDocumentMoniker": "Interface\\IHandType.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Interface\\IHandType.cs",
+              "RelativeToolTip": "Interface\\IHandType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:23:19.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ThreeOfAKind.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\ThreeOfAKind.cs",
+              "RelativeDocumentMoniker": "Combination\\ThreeOfAKind.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\ThreeOfAKind.cs",
+              "RelativeToolTip": "Combination\\ThreeOfAKind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:06:51.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TwoPair.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\TwoPair.cs",
+              "RelativeDocumentMoniker": "Combination\\TwoPair.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\TwoPair.cs",
+              "RelativeToolTip": "Combination\\TwoPair.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:06:16.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StraightFlush.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\StraightFlush.cs",
+              "RelativeDocumentMoniker": "Combination\\StraightFlush.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\StraightFlush.cs",
+              "RelativeToolTip": "Combination\\StraightFlush.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:19:05.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Straight.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\Straight.cs",
+              "RelativeDocumentMoniker": "Combination\\Straight.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\Straight.cs",
+              "RelativeToolTip": "Combination\\Straight.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:18:01.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HighCard.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\HighCard.cs",
+              "RelativeDocumentMoniker": "Combination\\HighCard.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\HighCard.cs",
+              "RelativeToolTip": "Combination\\HighCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:06:42.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FullHouse.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FullHouse.cs",
+              "RelativeDocumentMoniker": "Combination\\FullHouse.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FullHouse.cs",
+              "RelativeToolTip": "Combination\\FullHouse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:18:28.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FlushHouse.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FlushHouse.cs",
+              "RelativeDocumentMoniker": "Combination\\FlushHouse.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FlushHouse.cs",
+              "RelativeToolTip": "Combination\\FlushHouse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:08:29.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FlushFive.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FlushFive.cs",
+              "RelativeDocumentMoniker": "Combination\\FlushFive.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FlushFive.cs",
+              "RelativeToolTip": "Combination\\FlushFive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:08:37.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Flush.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\Flush.cs",
+              "RelativeDocumentMoniker": "Combination\\Flush.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\Flush.cs",
+              "RelativeToolTip": "Combination\\Flush.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:08:19.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FourOfAKind.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FourOfAKind.cs",
+              "RelativeDocumentMoniker": "Combination\\FourOfAKind.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Combination\\FourOfAKind.cs",
+              "RelativeToolTip": "Combination\\FourOfAKind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T08:07:13.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PlayerHand.cs",
+              "DocumentMoniker": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\PlayerHand.cs",
+              "RelativeDocumentMoniker": "Player\\PlayerHand.cs",
+              "ToolTip": "C:\\Users\\kajva\\source\\repos\\test\\test\\Player\\PlayerHand.cs",
+              "RelativeToolTip": "Player\\PlayerHand.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T07:21:32.529Z"
             }
           ]
         }
