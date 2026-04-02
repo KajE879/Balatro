@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using test.Cards;
 
 namespace test.Player
 {
     class PlayerHand
     {
-        List<Card> Hand;
-        //int MaxCards;
-        List<int> SelectedIndexes;
-
+        private List<Card> Hand;
+        private List<int> SelectedIndexes;
         public IEnumerable<Card> CardsInHand => this.Hand;
         public IEnumerable<int> SelectedCards => this.SelectedIndexes;
 
+        public int MaxSelectedCards { get; private set; } = 5;
+
         public PlayerHand(int maxCards)
         {
-            this.MaxCards = maxCards;
             this.Hand = new List<Card>();
             this.SelectedIndexes = new List<int>();
         }
-
-        public int MaxCards { get; private set; }
 
         public void AddCard(Card newCard)
         {
@@ -29,52 +27,40 @@ namespace test.Player
 
         public void SelectCard(int index)
         {
-            if (this.Hand.Count == 5)
-            {
+            if (index < 0 || index >= Hand.Count)
                 return;
-            }
-            if (this.Hand.Count > index)
-            {
-                if (!this.SelectedIndexes.Contains(index))
-                {
-                    this.SelectedIndexes.Add(index);
-                }
-            }
+
+            if (SelectedIndexes.Contains(index))
+                return;
+
+            if (SelectedIndexes.Count >= MaxSelectedCards)
+                return;
+
+            SelectedIndexes.Add(index);
         }
 
         public void DeselectCard(int index)
         {
+            if (index < 0 || index >= Hand.Count)
+                return;
+
             SelectedIndexes.Remove(index);
         }
 
         public List<Card> GetSelected()
         {
-            return this.Hand.
-                Where((card, index) =>
-                {
-                    if (this.SelectedIndexes.Contains(index))
-                    {
-                        return true;
-                    }
-                    return false;
-                })
-            .ToList();
+            return Hand
+                .Where((card, index) => SelectedIndexes.Contains(index))
+                .ToList();
         }
 
         public void RemoveSelected()
         {
-            this.Hand = this.Hand.
-                Where((card, index) =>
-                {
-                    if (this.SelectedIndexes.Contains(index))
-                    {
-                        return false;
-                    }
-                    return true;
-                })
-            .ToList();
+            Hand = Hand
+                .Where((card, index) => !SelectedIndexes.Contains(index))
+                .ToList();
 
-            this.SelectedIndexes.Clear();
+            SelectedIndexes.Clear();
         }
     }
 }

@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using test.Interface;
+using test.Cards;
+
+namespace test.Combination
+{
+    public class High : IHandType
+    {
+        public int BaseScore => 5;
+        public string Name => "High Card";
+
+        public bool IsValid(IEnumerable<Card> playedHand) => true;
+
+        public IEnumerable<Card> FilterToScoringCards(IEnumerable<Card> playedHand)
+            => playedHand.OrderByDescending(c => c.Value).Take(1);
+    }
+}

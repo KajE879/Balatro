@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using test.Card;
+using test.Cards;
 
 namespace test.Player
 {

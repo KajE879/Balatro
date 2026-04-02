@@ -13,6 +13,12 @@ namespace test
             PlayerHand hand = new PlayerHand(5);
             hand.AddCard(testDeck.TakeCard());
             hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
+            hand.AddCard(testDeck.TakeCard());
 
             Model model = new Model(testDeck, hand);
 

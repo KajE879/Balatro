@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace test.Card
+namespace test.Cards
 {
     enum CardValue
     {

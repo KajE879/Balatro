@@ -1,18 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using test.Cards;
 
 namespace test
 {
     class ViewModel
     {
         private Model Model;
+
         private int DeckCardsTotal, DeckCardsRemaining = 0;
         private IEnumerable<Card> CardsInHand = new List<Card>();
         private IEnumerable<int> SelectedCards = new List<int>();
+
+        private int CursorIndex = 0;
+
         public ViewModel(Model model)
         {
             this.Model = model;
+            UpdateFromModel();
         }
 
         public void UpdateFromModel()
@@ -27,33 +33,47 @@ namespace test
         {
             Console.Clear();
 
-            Console.WriteLine("Deck: "
-                + this.DeckCardsRemaining.ToString()
-                + "/"
-                + this.DeckCardsTotal.ToString());
+            Console.WriteLine("Deck: " +
+                this.DeckCardsRemaining + "/" +
+                this.DeckCardsTotal);
+
+            Console.WriteLine();
 
             for (int i = 0; i < this.CardsInHand.Count(); i++)
             {
                 Card card = this.CardsInHand.ElementAt(i);
-                if (this.SelectedCards.Contains(i))
-                {
-                    Console.Write("[x]");
-                }
-                else
-                {
-                    Console.Write("[ ]");
-                }
-                Console.WriteLine(card.MakeAsString());
+
+                Console.Write(i == CursorIndex ? ">" : " ");
+                Console.Write(this.SelectedCards.Contains(i) ? "[x]" : "[ ]");
+
+                Console.WriteLine(" " + card.MakeAsString());
             }
+
+            Console.WriteLine();
         }
 
         public void HandleUserInput()
         {
-            ConsoleKeyInfo key = Console.ReadKey();
+            ConsoleKeyInfo key = Console.ReadKey(true);
 
-            if (key.Key == ConsoleKey.Enter)
+            int maxIndex = this.CardsInHand.Count() - 1;
+
+            switch (key.Key)
             {
-                this.SelectCard(0);
+                case ConsoleKey.UpArrow:
+                    CursorIndex--;
+                    if (CursorIndex < 0) CursorIndex = 0;
+                    break;
+
+                case ConsoleKey.DownArrow:
+                    CursorIndex++;
+                    if (CursorIndex > maxIndex) CursorIndex = maxIndex;
+                    break;
+
+                case ConsoleKey.Enter:
+                case ConsoleKey.Spacebar:
+                    ToggleCard(CursorIndex);
+                    break;
             }
         }
 
@@ -61,16 +81,23 @@ namespace test
         {
             while (true)
             {
-                this.RenderUI();
-                this.HandleUserInput();
+                RenderUI();
+                HandleUserInput();
             }
         }
 
-        //actions
-        public void SelectCard(int index)
+        private void ToggleCard(int index)
         {
-            this.Model.PlayerHand.SelectCard(index);
-            this.UpdateFromModel();
+            if (this.SelectedCards.Contains(index))
+            {
+                this.Model.PlayerHand.DeselectCard(index);
+            }
+            else
+            {
+                this.Model.PlayerHand.SelectCard(index);
+            }
+
+            UpdateFromModel();
         }
     }
 }

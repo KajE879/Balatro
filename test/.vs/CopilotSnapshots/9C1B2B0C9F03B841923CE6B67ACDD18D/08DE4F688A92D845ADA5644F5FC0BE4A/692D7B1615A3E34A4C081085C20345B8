@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using test.Player;
+
+namespace test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Deck testDeck = new Deck();
+            PlayerHand hand = new PlayerHand(5);
+            var card = testDeck.TakeCard();
+            if (card != null)
+                hand.AddCard(card);
+            card = testDeck.TakeCard();
+            if (card != null)
+                hand.AddCard(card);
+
+            Model model = new Model(testDeck, hand);
+
+            ViewModel viewModel = new ViewModel(model);
+            viewModel.UpdateFromModel();
+
+            viewModel.Run();
+        }
+    }
+}

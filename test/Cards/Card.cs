@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using test.Interface;
 
-namespace test.Card
+
+namespace test.Cards
 {
     class Card : ICard
     {
