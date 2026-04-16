@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
@@ -30,13 +30,14 @@ namespace test
 
         public HandScore Evaluate(List<Card> cards)
         {
-            int points = cards.Sum(c => (int)c.Value);
-
             var best = hands.First(h => h.Matches(cards));
+            int cardSum = cards.Sum(c => c.ChipValue);
 
             return new HandScore
             {
-                Points = points,
+                Name = best.Name,
+                Points = best.Points,
+                CardSum = cardSum,
                 Mult = best.Mult
             };
         }

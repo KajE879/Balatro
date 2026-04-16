@@ -9,6 +9,8 @@ namespace test.Combination
     class FourOfAKind : IHandType
     {
         public int Mult => 7;
+        public int Points => 60;
+        public string Name => "Four Of A Kind";
         public bool Matches(List<Card> cards)
         {
             var groups = HandUtils.GetGroups(cards);

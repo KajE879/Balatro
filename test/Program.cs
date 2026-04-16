@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 using test.Player;
 using test.Cards;
-using test.Player;
 
 namespace test
 {
@@ -11,14 +8,11 @@ namespace test
     {
         static void Main(string[] args)
         {
-            // create deck and shuffle
             Deck testDeck = new Deck();
             testDeck.Shuffle();
 
-            // create player hand
-            PlayerHand hand = new PlayerHand(5);
+            PlayerHand hand = new PlayerHand(8);
 
-            // draw 8 cards
             for (int i = 0; i < 8; i++)
             {
                 var card = testDeck.TakeCard();
@@ -26,12 +20,9 @@ namespace test
                     hand.AddCard(card);
             }
 
-            // create model and viewmodel
             Model model = new Model(testDeck, hand);
-
             ViewModel vm = new ViewModel(model);
 
-            // start playing
             vm.Run();
         }
     }

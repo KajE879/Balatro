@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using test.Cards;
@@ -54,13 +54,23 @@ namespace test.Player
                 .ToList();
         }
 
-        public void RemoveSelected()
+        public void Discard(Deck deck)
         {
-            Hand = Hand
-                .Where((card, index) => !SelectedIndexes.Contains(index))
-                .ToList();
+            List<int> sorted = SelectedIndexes.OrderByDescending(i => i).ToList();
+
+            foreach (int i in sorted)
+            {
+                Hand.RemoveAt(i);
+            }
 
             SelectedIndexes.Clear();
+            while (Hand.Count < 8)
+            {
+                Card newCard = deck.TakeCard();
+                if (newCard == null)
+                    break;
+                Hand.Add(newCard);
+            }
         }
     }
 }

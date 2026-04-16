@@ -9,7 +9,6 @@ namespace test.Interface
     {
         public void PrintMe();
         public string MakeAsString();
-
         public bool SatisfiesSuit(Suit suit);
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using test.Cards;
@@ -10,6 +10,7 @@ namespace test.Player
     {
         private List<Card> CardsRemaining;
         private List<Card> CardsTaken;
+
         public int TotalCardCount
         {
             get
@@ -19,6 +20,7 @@ namespace test.Player
         }
 
         public int CardsRemainingCount => this.CardsRemaining.Count;
+
         public Deck()
         {
             this.CardsRemaining = new List<Card>();
@@ -30,8 +32,6 @@ namespace test.Player
                 {
                     Card card = new Card(value, suit);
                     this.CardsRemaining.Add(card);
-                    Console.WriteLine(card.Suit.ToString()
-                        + " " + card.Value.ToString());
                 }
             }
         }
@@ -40,6 +40,7 @@ namespace test.Player
         {
             this.CardsRemaining.Add(card);
         }
+
         public Card TakeCard()
         {
             if (this.CardsRemaining.Count == 0)

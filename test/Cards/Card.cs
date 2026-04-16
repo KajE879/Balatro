@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using test.Interface;
-
 
 namespace test.Cards
 {
@@ -10,6 +9,19 @@ namespace test.Cards
     {
         public CardValue Value { get; set; }
         public Suit Suit { get; set; }
+
+        public int ChipValue
+        {
+            get
+            {
+                if (Value == CardValue.Jack || Value == CardValue.Queen || Value == CardValue.King)
+                    return 10;
+                if (Value == CardValue.Ace)
+                    return 11;
+                return (int)Value;
+            }
+        }
+
         public Card(CardValue startValue, Suit startSuit)
         {
             this.Value = startValue;
@@ -18,12 +30,28 @@ namespace test.Cards
 
         public void PrintMe()
         {
-            Console.WriteLine(this.Value);
+            Console.WriteLine(this.MakeAsString());
         }
 
         public string MakeAsString()
         {
-            return this.Suit.ToString() + " " + this.Value.ToString();
+            string rank = "";
+
+            if (Value == CardValue.Ace)   rank = "A";
+            else if (Value == CardValue.King)  rank = "K";
+            else if (Value == CardValue.Queen) rank = "Q";
+            else if (Value == CardValue.Jack)  rank = "J";
+            else if (Value == CardValue.Ten)   rank = "10";
+            else rank = ((int)Value).ToString();
+
+            string suit = "";
+
+            if (Suit == Suit.Hearts)   suit = "♥";
+            else if (Suit == Suit.Diamonds) suit = "♦";
+            else if (Suit == Suit.Spades)   suit = "♠";
+            else if (Suit == Suit.Clovers)  suit = "♣";
+
+            return rank + suit;
         }
 
         public bool SatisfiesSuit(Suit suit)

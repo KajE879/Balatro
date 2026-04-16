@@ -9,6 +9,8 @@ namespace test.Combination
     class FullHouse : IHandType
     {
         public int Mult => 4;
+        public int Points => 40;
+        public string Name => "Full House";
         public bool Matches(List<Card> cards)
         {
             var groups = HandUtils.GetGroups(cards).Values;

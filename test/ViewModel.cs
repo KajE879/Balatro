@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using test.Cards;
+using test.Player;
 
 namespace test
 {
@@ -12,6 +13,8 @@ namespace test
         private int DeckCardsTotal, DeckCardsRemaining = 0;
         private IEnumerable<Card> CardsInHand = new List<Card>();
         private IEnumerable<int> SelectedCards = new List<int>();
+
+        private HandScore? LastScore;
 
         private int CursorIndex = 0;
 
@@ -27,33 +30,75 @@ namespace test
             this.DeckCardsRemaining = this.Model.Deck.CardsRemainingCount;
             this.CardsInHand = this.Model.PlayerHand.CardsInHand;
             this.SelectedCards = this.Model.PlayerHand.SelectedCards;
+            this.LastScore = this.Model.LastScore;
         }
 
         public void RenderUI()
         {
             Console.Clear();
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            Console.WriteLine("Deck: " +
-                this.DeckCardsRemaining + "/" +
-                this.DeckCardsTotal);
+            // Level info
+            Console.WriteLine("Level " + this.Model.Level
+                + "  |  Score: " + this.Model.LevelScore + " / " + this.Model.LevelTarget
+                + "  |  Hands: " + this.Model.HandsLeft
+                + "  |  Discards: " + this.Model.DiscardsLeft
+                + "  |  Deck: " + this.DeckCardsRemaining + "/" + this.DeckCardsTotal);
 
             Console.WriteLine();
 
+            // Card list
             for (int i = 0; i < this.CardsInHand.Count(); i++)
             {
                 Card card = this.CardsInHand.ElementAt(i);
 
                 Console.Write(i == CursorIndex ? ">" : " ");
                 Console.Write(this.SelectedCards.Contains(i) ? "[x]" : "[ ]");
-
                 Console.WriteLine(" " + card.MakeAsString());
             }
 
             Console.WriteLine();
+
+            // Hand preview
+            var selected = this.Model.PlayerHand.GetSelected();
+            var preview = this.Model.EvaluatePreview();
+
+            if (selected.Count == 0)
+            {
+                Console.WriteLine("Hand:  None");
+                Console.WriteLine("Score: 0 x 0 = 0");
+            }
+            else
+            {
+                Console.WriteLine("Hand:  " + preview.Name);
+                Console.WriteLine("Score: (" + preview.Points + " + " + preview.CardSum + ") x " + preview.Mult + " = " + preview.Total);
+            }
+
+            // Last played hand
+            if (this.LastScore != null)
+            {
+                Console.WriteLine("Last:  " + this.LastScore.Name + " = " + this.LastScore.Total + " pts");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("[P] Play hand   [D] Discard   [Up/Down] Move   [Space] Select");
+
+            // Game over
+            if (this.Model.IsGameOver)
+            {
+                Console.WriteLine();
+                Console.WriteLine("GAME OVER - press any key to quit");
+            }
         }
 
         public void HandleUserInput()
         {
+            if (this.Model.IsGameOver)
+            {
+                Console.ReadKey(true);
+                Environment.Exit(0);
+            }
+
             ConsoleKeyInfo key = Console.ReadKey(true);
 
             int maxIndex = this.CardsInHand.Count() - 1;
@@ -73,6 +118,21 @@ namespace test
                 case ConsoleKey.Enter:
                 case ConsoleKey.Spacebar:
                     ToggleCard(CursorIndex);
+                    break;
+
+                case ConsoleKey.P:
+                    this.Model.PlayHand();
+                    this.UpdateFromModel();
+                    // Keep cursor in bounds after refill
+                    if (CursorIndex > this.CardsInHand.Count() - 1)
+                        CursorIndex = this.CardsInHand.Count() - 1;
+                    break;
+
+                case ConsoleKey.D:
+                    this.Model.DiscardSelected();
+                    this.UpdateFromModel();
+                    if (CursorIndex > this.CardsInHand.Count() - 1)
+                        CursorIndex = this.CardsInHand.Count() - 1;
                     break;
             }
         }

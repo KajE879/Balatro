@@ -9,6 +9,8 @@ namespace test.Combination
     class HighCard : IHandType
     {
         public int Mult => 1;
+        public int Points => 5;
+        public string Name => "High Card";
         public bool Matches(List<Card> cards)
         {
             return true;

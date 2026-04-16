@@ -9,6 +9,8 @@ namespace test.Combination
     class TwoPair : IHandType
     {
         public int Mult => 2;
+        public int Points => 20;
+        public string Name => "Two Pair";
         public bool Matches(List<Card> cards)
         {
             var groups = HandUtils.GetGroups(cards);
