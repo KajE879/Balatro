@@ -20,7 +20,7 @@ namespace test
         public int HandsLeft { get; private set; } = 4;
         public int DiscardsLeft { get; private set; } = 3;
 
-        public bool IsGameOver => HandsLeft <= 0 && LevelScore < LevelTarget;
+        public bool GameOver => HandsLeft <= 0 && LevelScore < LevelTarget;
 
         public Model(Deck deck, PlayerHand playerHand)
         {

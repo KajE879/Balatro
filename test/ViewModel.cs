@@ -38,7 +38,6 @@ namespace test
             Console.Clear();
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            // Level info
             Console.WriteLine("Level " + this.Model.Level
                 + "  |  Score: " + this.Model.LevelScore + " / " + this.Model.LevelTarget
                 + "  |  Hands: " + this.Model.HandsLeft
@@ -47,7 +46,6 @@ namespace test
 
             Console.WriteLine();
 
-            // Card list
             for (int i = 0; i < this.CardsInHand.Count(); i++)
             {
                 Card card = this.CardsInHand.ElementAt(i);
@@ -59,7 +57,6 @@ namespace test
 
             Console.WriteLine();
 
-            // Hand preview
             var selected = this.Model.PlayerHand.GetSelected();
             var preview = this.Model.EvaluatePreview();
 
@@ -73,18 +70,10 @@ namespace test
                 Console.WriteLine("Hand:  " + preview.Name);
                 Console.WriteLine("Score: (" + preview.Points + " + " + preview.CardSum + ") x " + preview.Mult + " = " + preview.Total);
             }
-
-            // Last played hand
-            if (this.LastScore != null)
-            {
-                Console.WriteLine("Last:  " + this.LastScore.Name + " = " + this.LastScore.Total + " pts");
-            }
-
             Console.WriteLine();
             Console.WriteLine("[P] Play hand   [D] Discard   [Up/Down] Move   [Space] Select");
 
-            // Game over
-            if (this.Model.IsGameOver)
+            if (this.Model.GameOver)
             {
                 Console.WriteLine();
                 Console.WriteLine("GAME OVER - press any key to quit");
@@ -93,7 +82,7 @@ namespace test
 
         public void HandleUserInput()
         {
-            if (this.Model.IsGameOver)
+            if (this.Model.GameOver)
             {
                 Console.ReadKey(true);
                 Environment.Exit(0);
@@ -123,7 +112,6 @@ namespace test
                 case ConsoleKey.P:
                     this.Model.PlayHand();
                     this.UpdateFromModel();
-                    // Keep cursor in bounds after refill
                     if (CursorIndex > this.CardsInHand.Count() - 1)
                         CursorIndex = this.CardsInHand.Count() - 1;
                     break;

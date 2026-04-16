@@ -9,18 +9,7 @@ namespace test.Cards
     {
         public CardValue Value { get; set; }
         public Suit Suit { get; set; }
-
-        public int ChipValue
-        {
-            get
-            {
-                if (Value == CardValue.Jack || Value == CardValue.Queen || Value == CardValue.King)
-                    return 10;
-                if (Value == CardValue.Ace)
-                    return 11;
-                return (int)Value;
-            }
-        }
+        public int ChipValue => (int)Value;
 
         public Card(CardValue startValue, Suit startSuit)
         {

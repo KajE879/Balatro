@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kajva\\source\\repos\\test\\balatro\\test.csproj",
+      "projectUniqueName": "C:\\Users\\kajva\\source\\repos\\test\\test\\test.csproj",
       "projectName": "test",
-      "projectPath": "C:\\Users\\kajva\\source\\repos\\test\\balatro\\test.csproj",
+      "projectPath": "C:\\Users\\kajva\\source\\repos\\test\\test\\test.csproj",
       "packagesPath": "C:\\Users\\kajva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kajva\\source\\repos\\test\\balatro\\obj\\",
+      "outputPath": "C:\\Users\\kajva\\source\\repos\\test\\test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kajva\\AppData\\Roaming\\NuGet\\NuGet.Config",
